@@ -86,7 +86,6 @@ String _underscore = "_";
         System.out.print( sal.salary);
     }
 
-
 }
 
 
