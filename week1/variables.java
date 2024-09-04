@@ -8,6 +8,9 @@ public class Variables{     // everything within a class
 
      // 1.1 Declare Variables 
 
+    private static final float pi_ = 3.14f;  // instance variable/field/global variable
+    
+
     static int age;     // be descriptive 
     String lastName;
     double salary;
@@ -70,6 +73,23 @@ public class Variables{     // everything within a class
      public void justAmethod(){
         salary = 500.0;
     }
+
+     // IMPLICIT CASTING
+     static int number = 100;
+
+     static long num = number;  
+
+    // EXPLICIT CASTING (NARROWING)
+    static double change = 16.78d;
+    static int _change_int = (int) change;  // double to int
+    
+    
+    static Object str = 12;
+    static String strs = (String) str;
+
+    public static void display(){
+       
+    }
      
 double $_in_rand = 17.99d;
 String _underscore = "_";
@@ -78,12 +98,40 @@ String _underscore = "_";
 
 
     public static void main(String[] strings){  // main method
-        Variables sal = new Variables();
-     
-        System.err.println("Name type :"+ name_2.getClass());
-        System.err.println("Name type :"+ name_3.getClass());
-        System.out.print( age);  // accessed in a static way without an object instance
-        System.out.print( sal.salary);
+        Variables val = new Variables();
+        Object _obj = new Object();
+
+        float pi_ = 14.56f;
+
+        System.out.println(pi_);
+       
+      
+       
+        Object obj = 12;
+       // System.err.println("Name type :"+ name_2.getClass());
+       // System.err.println("Name type :"+ name_3.getClass());
+       // System.out.print( age);  // accessed in a static way without an object instance
+      //  System.out.print( val.salary); // static access
+
+        new String("String or whatever");
+        new Variables();
+
+      //  System.out.println(name_2.getClass().getName());
+      //  System.out.println( ((Object) age ).getClass().getName());
+       // System.out.println(  ((Object) val.salary).getClass() );
+
+        Variables varri = new Variables();
+        double d = 100.5;
+
+       // System.out.println(varri.getClass());
+       // System.out.println(((Object)d).getClass());
+
+        
+      //  System.out.println(num +"- Type :" + ((Object) num).getClass());
+     // System.out.println(obj);
+     // System.out.println("Data type 1: " + str.getClass());
+     // System.out.println("Data type 2: " +strs.getClass());
+        
     }
 
 }
